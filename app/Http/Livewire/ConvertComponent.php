@@ -36,10 +36,10 @@ class ConvertComponent extends Component
     public function removeNonChars($string) : string
     {
         // Alles, was keine buchstaben oder spaces sind, ersetzen
-        $regex = "/[^\w\s]/";
+        $regex = "/[^\w\s!?]/";
         $string = preg_filter($regex, ' ', $string) ?? $string;
         // mehrfachspaces durch einfache ersetzen
-        return preg_filter("/\s+/", ' ', $string) ?? $string;
+        return preg_filter("/\s\s/", ' ', $string) ?? $string;
     }
 
     public function umlaute($string)
@@ -96,14 +96,10 @@ class ConvertComponent extends Component
 
         $entries = new Collection(DB::select("SELECT * FROM $dbTable"));
 
-        $output = '';
-
-        foreach(str_split($input) as $char)
+        foreach($entries as $entry)
         {
-            $output .= $entries->first(function ($value, $key) use ($char) {
-                return $value->source == $char;
-            }, json_decode(json_encode(['votox' => ' '])))->votox;
+            $input = str_replace($entry->source, $entry->votox, $input);
         }
-        return $output;
+        return $input;
     }
 }

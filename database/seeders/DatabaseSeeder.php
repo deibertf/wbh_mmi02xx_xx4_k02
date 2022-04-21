@@ -61,7 +61,7 @@ class DatabaseSeeder extends Seeder
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'F\',\'v\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'G\',\'g\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'H\',\'H\');');
-        DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'I\',\'EE\');');
+        DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'I\',\'E\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'J\',\'y\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'K\',\'K\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'L\',\'l\');');
@@ -71,7 +71,7 @@ class DatabaseSeeder extends Seeder
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'P\',\'P\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'Q\',\'Kw\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'R\',\'r\');');
-        DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'S\',\'s\');');
+        DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'S\',\'S\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'T\',\'T\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'U\',\'O\');');
         DB::insert('INSERT INTO latin_to_votox (source, votox) VALUES (\'V\',\'w\');');
