@@ -11,9 +11,9 @@
 ## Files 
 
 1. Logic can be found in `app/Http/livewire/ConvertComponent.php`
-2. The database is seeded using `/database/seeders/DatabaseSeeder.php`
-3. The tables are created using migrations in `/database/migrations/`
-4. Frontend HTML (Blade) is found in `/resources/views/livewire/convert-component.blade.php` using the layout from `/resources/views/layouts/layout.blade.php`.
+2. The database is seeded using `database/seeders/DatabaseSeeder.php`
+3. The tables are created using migrations in `database/migrations/`
+4. Frontend HTML (Blade) is found in `resources/views/livewire/convert-component.blade.php` using the layout from `resources/views/layouts/layout.blade.php`.
 
 ## Working Demo
 
